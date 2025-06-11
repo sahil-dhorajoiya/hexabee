@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section className="bg-white pt-40 pb-10">
       <div className="container  mx-auto px-4">
         {/* API Badge */}
-      <div className=''>
+      <div className='flex items-center gap-6 justify-center'>
       <div className="flex justify-center mb-8">
           <div className="bg-yellow-100 border border-yellow-400 rounded-full px-8 py-4 flex items-center">
             <span className="text-black font-bold text-lg mr-4">Powered by Official WhatsApp Business API</span>
@@ -18,7 +18,7 @@ const HeroSection = () => {
         </div>
 
         {/* Meta Partnership */}
-        <div className="flex justify-center items-center mb-12">
+        <div className="flex justify-center items-center mb-8">
           <Image src="/images/img_meta_logo.png" alt="Meta Logo" width={48} height={48} />
           <div className="ml-4 flex items-end gap-1">
             <span className="text-2xl font-normal underline">Meta</span>

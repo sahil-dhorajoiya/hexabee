@@ -31,13 +31,30 @@ body {
 
 .header-main{
   padding: 25px 40px;
-  background: #F9AF185E;
+  /* background: #F9AF185E; */
   border-radius: 25px;
   border: 1px solid;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 @media only screen and (max-width: 1024px) { 
   .feactured-section{
     grid-template-columns: 1fr;
   }
+}
+
+.card-one{
+  background: #E6F4EA;
+  border-radius: 40px;
+}
+.card-two{
+  background: #EAF6FB;
+  border-radius: 40px;
+}
+.card-three{
+  background: #FFF4E0;
+  border-radius: 40px;
+}
+.card-four{
+  background: #FCEDEE;
+  border-radius: 40px;
 }

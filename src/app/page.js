@@ -3,6 +3,13 @@ import HeroSection from "@/components/HeroSection";
 import BusinessSolutions from "@/components/BusinessSolutions";
 import Image from "next/image";
 import FeaturesSection from "@/components/FeaturesSection";
+import VideoSection from "@/VideoSection";
+import EngagementSuite from "@/EngagementSuite";
+import Statistics from "@/Statistics";
+import InsightsSection from "@/InsightsSection";
+import IntegrationGrid from "@/IntegrationGrid";
+import AdditionalFeatures from "@/AdditionalFeatures";
+
 
 export default function Home() {
   return (
@@ -11,6 +18,12 @@ export default function Home() {
    <HeroSection />
    <FeaturesSection />
    {/* <BusinessSolutions /> */}
+   <VideoSection />
+   <EngagementSuite/>
+   <Statistics/>
+   {/* <InsightsSection/> */}
+   <IntegrationGrid/>
+   <AdditionalFeatures/>
    </>
   );
 }
