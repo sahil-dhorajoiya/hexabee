@@ -2,6 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import Button from '@/components/ui/button';
 import Card from '@/components/ui/card';
 
@@ -10,31 +14,31 @@ const InsightsSection = () => {
     {
       image: "/images/img_base_image.png",
       title: "Card Title",
-      description: "Some quick example text to build on the card title and make up the bulk of the card\'s content.",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
       buttonText: "Button"
     },
     {
       image: "/images/img_base_image.png",
       title: "Card Title",
-      description: "Some quick example text to build on the card title and make up the bulk of the card\'s content.",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
       buttonText: "Button"
     },
     {
       image: "/images/img_base_image.png",
       title: "Card Title",
-      description: "Some quick example text to build on the card title and make up the bulk of the card\'s content.",
-      buttonText: "Button"
-    },
-    {
-      image: "/images/img_base_image_201x74.png",
-      title: "Card Title",
-      description: "Some quick example text to build on the card title and make up the bulk of the card\'s content.",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
       buttonText: "Button"
     },
     {
       image: "/images/img_base_image.png",
       title: "Card Title",
-      description: "Some quick example text to build on the card title and make up the bulk of the card\'s content.",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      buttonText: "Button"
+    },
+    {
+      image: "/images/img_base_image.png",
+      title: "Card Title",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
       buttonText: "Button"
     }
   ];
@@ -42,40 +46,38 @@ const InsightsSection = () => {
   return (
     <section className="bg-gradient-to-r from-yellow-50 to-yellow-100 py-16">
       <div className="container mx-auto px-4">
-        {/* Scrollable Cards Container */}
-        <div className="overflow-x-auto">
-          <div className="flex space-x-6 pb-4" style={{ width: 'max-content' }}>
-            {insightCards.map((card, index) => (
-              <Card 
-                key={index}
-                className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 flex-shrink-0 w-96 relative"
-              >
+        <Swiper
+          modules={[Navigation]}
+          spaceBetween={24}
+          slidesPerView={1}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+          breakpoints={{
+            640: { slidesPerView: 1.2 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 3.5 },
+          }}
+          className="group"
+        >
+          {insightCards.map((card, index) => (
+            <SwiperSlide key={index}>
+              <Card className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 w-full">
                 <div className="relative">
-                  <Image 
-                    src={card.image} 
+                  <Image
+                    src={card.image}
                     alt={card.title}
-                    width={455} 
+                    width={455}
                     height={255}
-                    className="w-full rounded-t-lg"
+                    className="w-full h-auto rounded-t-lg object-cover"
                   />
-                  
-                  {/* Navigation Buttons */}
-                  {index === 0 && (
-                    <div className="absolute bottom-4 left-4 bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 rounded-full p-4">
-                      <Image src="/images/img_frame_black_900.svg" alt="Previous" width={32} height={32} />
-                    </div>
-                  )}
-                  {index === 2 && (
-                    <div className="absolute bottom-4 right-4 bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 rounded-full p-4">
-                      <Image src="/images/img_frame_black_900.svg" alt="Next" width={32} height={32} />
-                    </div>
-                  )}
                 </div>
-                
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-black mb-4">{card.title}</h3>
                   <p className="text-gray-600 mb-6">{card.description}</p>
-                  <Button 
+                  <Button
                     variant="primary"
                     className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 text-black"
                   >
@@ -83,9 +85,17 @@ const InsightsSection = () => {
                   </Button>
                 </div>
               </Card>
-            ))}
+            </SwiperSlide>
+          ))}
+
+          {/* Navigation Buttons */}
+          <div className="swiper-button-prev !left-0 absolute top-1/2 -translate-y-1/2 z-10 bg-yellow-200 hover:bg-yellow-300 p-3 rounded-full shadow-md cursor-pointer">
+            <Image src="/images/img_frame_black_900.svg" alt="Prev" width={24} height={24} />
           </div>
-        </div>
+          <div className="swiper-button-next !right-0 absolute top-1/2 -translate-y-1/2 z-10 bg-yellow-200 hover:bg-yellow-300 p-3 rounded-full shadow-md cursor-pointer">
+            <Image src="/images/img_frame_black_900.svg" alt="Next" width={24} height={24} />
+          </div>
+        </Swiper>
       </div>
     </section>
   );

@@ -78,3 +78,9 @@ body {
 .card-razorpay {
   background-color: #f3f8ff;
 }
+.swiper-button-prev:after, .swiper-button-next:after {
+
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}

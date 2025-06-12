@@ -22,7 +22,7 @@ export default function Home() {
    <VideoSection />
    <EngagementSuite/>
    <Statistics/>
-   {/* <InsightsSection/> */}
+   <InsightsSection/>
    <IntegrationGrid/>
    <AdditionalFeatures/>
    <Footer/>
