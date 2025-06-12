@@ -9,6 +9,7 @@ import Statistics from "@/Statistics";
 import InsightsSection from "@/InsightsSection";
 import IntegrationGrid from "@/IntegrationGrid";
 import AdditionalFeatures from "@/AdditionalFeatures";
+import Footer from "@/Footer";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
    {/* <InsightsSection/> */}
    <IntegrationGrid/>
    <AdditionalFeatures/>
+   <Footer/>
    </>
   );
 }

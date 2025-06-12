@@ -13,7 +13,7 @@ export default function IntegrationGrid() {
       </section>
 
       {/* Grid */}
-      <div className="relative max-w-5xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-50 p-5">
+      <div className="relative max-w-5xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-50 grid-innercard p-5">
         {/* Cards */}
         {[
           {
@@ -22,6 +22,7 @@ export default function IntegrationGrid() {
             logo: "https://cdn.worldvectorlogo.com/logos/hubspot.svg",
             alt: "HubSpot",
             foot: "Faster follow-ups, higher conversions.",
+             className: "card-hubspot",
           },
           {
             title: "Smart Order Updates",
@@ -29,6 +30,7 @@ export default function IntegrationGrid() {
             logo: "https://cdn.worldvectorlogo.com/logos/shopify.svg",
             alt: "Shopify",
             foot: "More repeats, fewer drop-offs.",
+            className: "card-shopify",
           },
           {
             title: "WhatsApp → CRM Magic",

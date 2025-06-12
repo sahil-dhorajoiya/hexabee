@@ -58,3 +58,23 @@ body {
   background: #FCEDEE;
   border-radius: 40px;
 }
+
+
+.grid-innercard{
+  grid-gap: 300px !important;
+}
+.card-hubspot {
+  background-color: red;
+}
+
+.card-shopify {
+  background-color: #eefaf7;
+}
+
+.card-salesforce {
+  background-color: #eef4fb;
+}
+
+.card-razorpay {
+  background-color: #f3f8ff;
+}
