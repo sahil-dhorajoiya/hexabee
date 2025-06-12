@@ -11,7 +11,7 @@ const HeroSection = () => {
         {/* API Badge & Meta Partner */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-6 mb-8">
           {/* API Badge */}
-          <div className="bg-yellow-100 border border-yellow-400 rounded-full px-6 md:px-8 py-3 md:py-4 flex items-center">
+          <div className="bg-gradient-to-r from-[#fff5dc] to-[#feebc8]  rounded-full px-6 md:px-8 py-3 md:py-4 flex items-center" style={{ border: '1px solid rgba(252, 217, 162, 0.3)' }}>
             <span className="text-black font-bold text-base md:text-lg mr-3 md:mr-4 text-center">
               Powered by Official WhatsApp Business API
             </span>
@@ -21,7 +21,7 @@ const HeroSection = () => {
           {/* Meta Partnership */}
           <div className="flex items-center">
             <Image src="/images/img_meta_logo.png" alt="Meta Logo" width={48} height={48} />
-            <div className="ml-3 flex flex-col">
+            <div className="ml-3 flex items-baseline gap-1">
               <span className="text-xl md:text-2xl font-normal underline">Meta</span>
               <span className="text-sm underline">Tech Partner</span>
             </div>
@@ -68,7 +68,7 @@ const HeroSection = () => {
           ].map((feature, i) => (
             <div
               key={i}
-              className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 rounded-full px-5 py-2 sm:px-6 sm:py-3 flex items-center"
+              className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-yellow-400 rounded-full px-5 py-2 sm:px-6 sm:py-3 flex items-center"
             >
               <Image
                 src={`/images/${feature.icon}`}

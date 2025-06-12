@@ -14,7 +14,7 @@ const AdditionalFeatures = () => {
         </div>
 
         {/* Features Banner */}
-        <div className="bg-gradient-to-r from-yellow-50 to-yellow-100  bg-[#fff7ec] border-b border-[#f0e6dc] py-8 mb-16 w-full">
+        <div className="bg-gradient-to-r from-[#fdfbf6] to-[#f8f3eb]  border-b border-[#f0e6dc] py-8 mb-16 w-full">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 justify-center text-center">
             <div className="flex gap-3 justify-center items-center">
               <Image src="/images/img_mask_group.svg" alt="Live Assistance" width={24} height={24} className="mb-2" />

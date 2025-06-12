@@ -16,8 +16,9 @@ const Button = ({
   const baseClasses = 'font-medium rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center';
   
   const variants = {
-    primary: 'bg-gradient-to-r from-yellow-400 to-yellow-500 text-black hover:from-yellow-500 hover:to-yellow-600 disabled:bg-gray-400 border border-yellow-400',
-    secondary: 'bg-white text-black border border-yellow-400 hover:bg-yellow-50 disabled:bg-gray-100',
+    // primary: 'bg-[linear-gradient(90deg,_#fffdf9_0%,_#fff7e6_100%)] text-black hover:from-[#fff5dc] hover:to-[#feebc8] disabled:bg-gray-400 border border-yellow-400',
+    primary: 'bg-gradient-to-r from-[#fffdf9] to-[#fff7e6] text-black hover:from-[#fff5dc] hover:to-[#feebc8] disabled:bg-gray-400 border border-yellow-400',
+    secondary: 'bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  text-black border border-yellow-400 hover:bg-yellow-50 disabled:bg-gray-100',
     outline: 'border border-gray-300 text-gray-700 hover:bg-gray-50 disabled:border-gray-200 disabled:text-gray-400',
   };
   

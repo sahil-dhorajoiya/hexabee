@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className=" py-4 fixed top-0 w-full z-50">
-      <div className="header-main container mx-auto flex justify-between items-center bg-gradient-to-r from-white to-yellow-100 px-4 lg:px-20 ">
+      <div className="header-main container mx-auto flex justify-between items-center  px-4 lg:px-20 " style={{ background: ' linear-gradient(90deg, #fffdf9 0%, #fff7e6 100%)', border: '1px solid rgba(252, 217, 162, 0.3)' }}>
         <div className="flex items-center">
           <Image 
             src="/images/img_artboard_1100_1layerstyle.svg" 

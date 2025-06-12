@@ -44,7 +44,7 @@ const InsightsSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-yellow-50 to-yellow-100 py-16">
+    <section className=" py-16" style={{ background: ' linear-gradient(90deg, #fffdf9 0%, #fff7e6 100%)' }}>
       <div className="container mx-auto px-4">
         <Swiper
           modules={[Navigation]}
@@ -64,7 +64,7 @@ const InsightsSection = () => {
         >
           {insightCards.map((card, index) => (
             <SwiperSlide key={index}>
-              <Card className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 w-full">
+              <Card className="bg-gradient-to-r from-[#fdfbf6] to-[#f8f3eb] border border-yellow-400 w-full" style={{border: '1px solid rgba(252, 217, 162, 0.3)'}}>
                 <div className="relative">
                   <Image
                     src={card.image}

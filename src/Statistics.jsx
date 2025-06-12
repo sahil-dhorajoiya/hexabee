@@ -25,11 +25,11 @@ const Statistics = () => {
         </div>
 
         {/* Statistics Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 sm:mb-16" >
           {stats.map((stat, index) => (
             <Card
               key={index}
-              className="bg-gradient-to-r from-yellow-50 to-white border border-yellow-400 text-center p-6 sm:p-8 shadow-md rounded-xl"
+              className="bg-gradient-to-r from-[#fdfbf6] to-[#f8f3eb]  text-center p-6 sm:p-8 shadow-[0px_5px_10px_0px_#0000000A,0px_18px_18px_0px_#00000008,0px_41px_24px_0px_#00000005,0px_72px_29px_0px_#00000003,0px_113px_32px_0px_#00000000] rounded-xl "style={{ border: '1px solid rgba(252, 217, 162, 0.3)'}}
             >
               <div className="text-3xl sm:text-4xl font-bold text-yellow-600 mb-3 sm:mb-4">
                 {stat.value}

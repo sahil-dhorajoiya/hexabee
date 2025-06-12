@@ -39,7 +39,7 @@ const EngagementSuite = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Main Booking Form */}
          <div>
-             <Card className="lg:col-span-2 bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-400 p-12">
+             <Card className="lg:col-span-2 bg-gradient-to-r from-[#fdfbf6] to-[#f8f3eb]  p-12" style={{ border: '1px solid rgba(252, 217, 162, 0.3)' }}>
             <div className="text-center mb-8">
               <h2 className="text-4xl font-bold text-black mb-4">
                 Let's Talk 1-on-1 : Book Your Strategy Session
