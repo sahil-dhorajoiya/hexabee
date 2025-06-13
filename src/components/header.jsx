@@ -100,10 +100,10 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t">
           <nav className="px-4 py-4 space-y-4">
-            <Link href="#" className="block text-gray-700 hover:text-blue-600">Solution</Link>
-            <Link href="#" className="block text-gray-700 hover:text-blue-600">Features</Link>
-            <Link href="#" className="block text-gray-700 hover:text-blue-600">Integration</Link>
-            <Link href="#" className="block text-gray-700 hover:text-blue-600">Resources</Link>
+            <Link href="#" className="block text-[#000000] hover:text-blue-600">Solution</Link>
+            <Link href="#" className="block text-[#000000] hover:text-blue-600">Features</Link>
+            <Link href="#" className="block text-[#000000] hover:text-blue-600">Integration</Link>
+            <Link href="#" className="block text-[#000000] hover:text-blue-600">Resources</Link>
             <Button variant="primary" className="w-full mt-4">Book A Demo</Button>
           </nav>
         </div>

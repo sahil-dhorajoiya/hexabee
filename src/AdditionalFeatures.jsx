@@ -40,7 +40,7 @@ const AdditionalFeatures = () => {
           <Button 
             variant="primary" 
             size="large"
-            className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 text-black font-semibold"
+            className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6] border border-yellow-400 text-black font-semibold"
           >
             Try Hexibee Today
           </Button>

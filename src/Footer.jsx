@@ -8,7 +8,7 @@ import InputField from '@/components/ui/InputField';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-yellow-50 to-yellow-100 pt-16 pb-8">
+    <footer className=" pt-16 pb-8" style={{background:'linear-gradient(90deg, #fffdf9 0%, #fff7e6 100%)'}}>
       <div className="container mx-auto px-4">
         {/* Newsletter */}
         <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-8 border-b border-gray-300 pb-8 mb-12">

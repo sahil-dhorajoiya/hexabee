@@ -34,7 +34,7 @@ body {
   /* background: #F9AF185E; */
   border-radius: 25px;
   border: 1px solid;
-  opacity: 0.9;
+  opacity: 1;
 }
 @media only screen and (max-width: 1024px) { 
   .feactured-section{

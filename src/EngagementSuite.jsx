@@ -183,13 +183,14 @@ const EngagementSuite = () => {
               <p className="text-gray-600 mb-6">
                 Supercharge chats, boost engagement & grow faster - all in your brand style.
               </p>
-              <Image 
-                src="/images/img_animation_1747946787276_1.png" 
-                alt="Widget Animation" 
-                width={110} 
-                height={110} 
-                className="mx-auto mb-6"
-              />
+             <img 
+  src="" 
+  alt="Widget Animation" 
+  width="110" 
+  height="110" 
+  className="mx-auto mb-6"
+/>
+
               <Button 
                 variant="secondary"
                 className="w-full border border-green-500"
@@ -206,8 +207,8 @@ const EngagementSuite = () => {
               <p className="text-gray-600 mb-6 text-center">
                 Let customers start WhatsApp chats instantly with your brand's smart QR codes.
               </p>
-              <Image 
-                src="/images/img_animation_1747947008535_1.png" 
+              <img 
+                src="/images/qr.gif" 
                 alt="QR Animation" 
                 width={110} 
                 height={110} 
@@ -229,8 +230,8 @@ const EngagementSuite = () => {
               <p className="text-gray-600 mb-6 text-center">
                 Partner with us to build big - strategic collabs that open new growth doors.
               </p>
-              <Image 
-                src="/images/img_animation_1747947311981_1.png" 
+              <img 
+                src="/images/partner.gif" 
                 alt="Partnership Animation" 
                 width={160} 
                 height={160} 
@@ -252,8 +253,8 @@ const EngagementSuite = () => {
               <p className="text-gray-600 mb-6 text-center">
                 Offer every solution under your own name, logo & vibe - no trace of us.
               </p>
-              <Image 
-                src="/images/img_animation_1747947916291_1.png" 
+              <img 
+                src="/images/branding.gif" 
                 alt="White Label Animation" 
                 width={135} 
                 height={135} 
