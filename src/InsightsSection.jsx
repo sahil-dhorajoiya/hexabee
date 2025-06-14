@@ -89,7 +89,7 @@ const InsightsSection = () => {
           ))}
 
           <div className="swiper-button-prev !left-0 absolute top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow-sm cursor-pointer border" style={{
-  backgroundColor: '#ffffff',
+  // backgroundColor: '#ffffff',
   borderWidth: '1px',
   borderImage: 'linear-gradient(90deg, rgba(249, 175, 24, 0.3), rgba(255, 195, 0, 0.3)) 1',
   borderImageSlice: 1
@@ -98,7 +98,7 @@ const InsightsSection = () => {
 </div>
 
 <div className="swiper-button-next !right-0 absolute top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow-sm cursor-pointer border" style={{
-  backgroundColor: '#ffffff',
+  // backgroundColor: '#ffffff',
   borderWidth: '1px',
   borderImage: 'linear-gradient(90deg, rgba(249, 175, 24, 0.3), rgba(255, 195, 0, 0.3)) 1',
   borderImageSlice: 1

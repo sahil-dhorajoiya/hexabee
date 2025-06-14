@@ -60,27 +60,96 @@ body {
 }
 
 
-.grid-innercard{
-  grid-gap: 300px !important;
+.grid-innercard {
+    position: relative;
+    grid-row-gap: 189px;
+    grid-column-gap: 450px;
 }
-.card-hubspot {
-  background-color: red;
+.card-hubspot::after {
+    content: "";
+  position: absolute;
+  background:  url(/images/lineone.svg);
+  width: 150px;
+  height: 150px;
+  top: 120px;
+  right: -150px;
+  z-index: 10; 
+  background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.card-shopify {
-  background-color: #eefaf7;
+.card-shopify::after {
+    content: "";
+  position: absolute;
+  background:  url(/images/linetwo.svg);
+  width: 150px;
+  height: 150px;
+   top: 120px;
+    right: 266px;
+  z-index: 10; 
+  background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.card-salesforce {
-  background-color: #eef4fb;
+.card-salesforce::after {
+    content: "";
+  position: absolute;
+    background:  url(/images/linefour.svg);
+  width: 150px;
+  height: 150px;
+  top: -15px;
+  right: -150px;
+  z-index: 10; 
+  background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.card-razorpay {
-  background-color: #f3f8ff;
+.card-razorpay::after {
+    content: "";
+  position: absolute;
+  background:  url(/images/linethree.svg);
+  width: 150px;
+  height: 150px;
+  top: -15px;
+  left: -150px;
+  z-index: 10; 
+  background-size: contain;
+    background-repeat: no-repeat;
 }
 .swiper-button-prev:after, .swiper-button-next:after {
 
     background: white;
     padding: 10px;
     border-radius: 50%;
+}
+.swiper-button-next img,
+.swiper-button-prev img {
+    display: none;
+}
+/* .swiper-button-prev:after {
+    background: url(/images/linethree.svg);
+}
+.swiper-button-next:after {
+    background: url(/images/linethree.svg); 
+} */
+
+.swiper-button-prev, .swiper-button-next {
+    margin-top: 0;
+    border: none !important;
+    width: 65px !important;
+    height: 65px !important;
+    box-shadow: none !important;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    position: absolute;
+}
+
+.swiper-button-next:after {
+    left: -30px;
+}
+.swiper-button-prev:after {
+    right: -30px;
 }
