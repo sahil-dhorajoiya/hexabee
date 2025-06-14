@@ -56,11 +56,11 @@ const FeaturesSection = () => {
                   <div key={idx} className="text-center">
                     <div className="relative mb-2">
                       <Image src={stat.img} alt={stat.title} width={80} height={80} />
-                      <span className="absolute inset-0 flex items-center justify-center text-lg font-bold">
+                      <span className="absolute inset-0 flex items-center text-[#000000] justify-center text-lg font-bold">
                         {stat.value}
                       </span>
                     </div>
-                    <span className="text-sm font-bold">{stat.title}</span>
+                    <span className="text-sm text-[#000000] font-bold">{stat.title}</span>
                   </div>
                 ))}
               </div>
@@ -72,14 +72,14 @@ const FeaturesSection = () => {
               <div className="mb-4">
                 <div className="flex items-center mb-2">
                   <Image src="/images/img_ellipse_106.png" alt="Profile" width={48} height={48} className="rounded-full mr-3" />
-                  <span className="text-sm">Welcome Message</span>
+                  <span className="text-sm text-[#000000]">Welcome Message</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-2">
                     {['img_group_6356251', 'img_group_6356252', 'img_group_6356253', 'img_group_6356254'].map((img, i) => (
                       <div key={i} className="relative">
                         <Image src={`/images/${img}.svg`} alt={`Metric ${i}`} width={48} height={48} />
-                        <span className="absolute inset-0 flex items-center justify-center text-xs font-bold">{[20, 35, 15, 40][i]}%</span>
+                        <span className="absolute inset-0 flex items-center justify-center text-[#000000] text-xs font-bold">{[20, 35, 15, 40][i]}%</span>
                       </div>
                     ))}
                   </div>
@@ -113,7 +113,7 @@ const FeaturesSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 relative">
               <Card className="bg-white p-4 w-full max-w-[300px] lg:absolute lg:left-[-150px] lg:bottom-[-85px]">
                 <Image src="/images/img_rectangle_2.png" alt="Product" width={219} height={109} className="rounded mb-3" />
-                <div className="text-xs">
+                <div className="text-xs text-[#000000]">
                   <p>Hey Utsav,</p>
                   <p className="font-bold">Summer Offer for you,</p>
                   <p>Grab this now or never deal!</p>
@@ -132,7 +132,7 @@ const FeaturesSection = () => {
 
               <Card className="bg-white p-4 w-full max-w-[300px] lg:absolute lg:right-[100px] lg:bottom-[-85px]">
                 <Image src="/images/img_rectangle_2_109x219.png" alt="Product" width={219} height={109} className="rounded mb-3" />
-                <div className="text-xs">
+                <div className="text-xs text-[#000000]">
                   <p>Hey Samantha,</p>
                   <p className="font-bold">Buy 5 at 1499 Only,</p>
                   <p>Grab the smell!</p>

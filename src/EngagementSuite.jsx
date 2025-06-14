@@ -53,27 +53,27 @@ const EngagementSuite = () => {
               {/* Contact Details */}
               <div>
                 <h3 className="text-lg font-bold text-black mb-4">Contact Details</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 text-black md:grid-cols-2 gap-4">
                   <InputField
                     name="firstName"
                     placeholder="Your First Name"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="border border-black rounded-md"
+                    className="border border-[#000000] rounded-md"
                   />
                   <InputField
                     name="lastName"
                     placeholder="Your Last Name"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="border border-black rounded-md"
+                    className="border border-[#000000] rounded-md"
                   />
                   <InputField
                     name="phone"
                     placeholder="Where can we ping you?"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="border border-black rounded-md"
+                    className="border border-[#000000] rounded-md"
                   />
                   <InputField
                     name="email"
@@ -81,7 +81,7 @@ const EngagementSuite = () => {
                     placeholder="Work Email Only, Please"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="border border-black rounded-md"
+                    className="border border-[#000000] rounded-md"
                   />
                 </div>
               </div>
@@ -89,27 +89,27 @@ const EngagementSuite = () => {
               {/* Company Details */}
               <div>
                 <h3 className="text-lg font-bold text-black mb-4">Company Details</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 text-black md:grid-cols-2 gap-4">
                   <InputField
                     name="brandType"
                     placeholder="Your Brand or Agency?"
                     value={formData.brandType}
                     onChange={handleInputChange}
-                    className="border border-black rounded-md"
+                    className="border border-[#000000] rounded-md"
                   />
                   <InputField
                     name="website"
                     placeholder="Drop Your Site Here"
                     value={formData.website}
                     onChange={handleInputChange}
-                    className="border border-black rounded-md"
+                    className="border border-[#000000] rounded-md"
                   />
                   <InputField
                     name="niche"
                     placeholder="What's Your Niche?"
                     value={formData.niche}
                     onChange={handleInputChange}
-                    className="border border-black rounded-md"
+                    className="border border-[#000000] rounded-md"
                   />
                   <div className="relative">
                     <InputField
@@ -117,7 +117,7 @@ const EngagementSuite = () => {
                       placeholder="Pick a Time That Works"
                       value={formData.timeSlot}
                       onChange={handleInputChange}
-                      className="border border-black rounded-md"
+                      className="border border-[#000000] rounded-md"
                     />
                     <Image 
                       src="/images/img_frame_black_900_24x24.svg" 
@@ -131,7 +131,7 @@ const EngagementSuite = () => {
               </div>
 
               {/* Captcha */}
-              <div className="bg-gray-50 border border-gray-300 rounded p-6 shadow-sm">
+              <div className="bg-gray-50 border border-gray-300 text-black rounded p-6 shadow-sm">
                 <div className="flex items-center">
                   <div className="flex items-center mr-4">
                     <input
@@ -184,7 +184,7 @@ const EngagementSuite = () => {
                 Supercharge chats, boost engagement & grow faster - all in your brand style.
               </p>
              <img 
-  src="" 
+  src="/images/wp.gif" 
   alt="Widget Animation" 
   width="110" 
   height="110" 

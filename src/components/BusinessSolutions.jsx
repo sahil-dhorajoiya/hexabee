@@ -5,7 +5,50 @@ import Image from 'next/image';
 import Card from '@/components/ui/card';
 
 const BusinessSolutions = () => {
-  return (
+  const features = [
+  {
+    title: "WhatsApp Payments",
+    description:
+      "Let customers pay right inside WhatsApp. Send invoices, collect payments – no extra steps.",
+    buttons: [
+      { text: "Generate Invoice" },
+      { text: "Notify Payee" },
+      { text: "Get Paid" },
+      {
+        text: "Track Payments",
+        cta: true,
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=400&q=80",
+    imageAlt: "Product",
+    type: "payments",
+  },
+  {
+    title: "WhatsApp Forms",
+    description:
+      "Collect feedback, take bookings, or run surveys – all inside WhatsApp.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
+    imageAlt: "Forms UI",
+    type: "forms",
+  },
+  {
+    title: "WhatsApp Carousels",
+    description:
+      "Showcase your products with swipeable carousels. Let customers browse and buy – without leaving chat.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+    imageAlt: "Carousel Mockup",
+    type: "carousels",
+  },
+  {
+    title: "Best Customer Support",
+    description:
+      "Give fast, human support on WhatsApp. Your team replies in real time, customers feel the difference.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
+    imageAlt: "Support Agent",
+    type: "support",
+  },
+];
+  return (<>
     <section className="bg-white py-10">
       <div className="container mx-auto px-4">
         {/* Header */}
@@ -99,7 +142,7 @@ const BusinessSolutions = () => {
               </Card>
               <Card className="bg-white p-4">
                 <Image src="/images/img_rectangle_2_76x152.png" alt="Payment" width={152} height={76} className="rounded mb-2" />
-                <div className="text-xs">
+                <div className="text-xs text-[#000000]">
                   <p>Hey Utsav,</p>
                   <p className="font-bold">Your product is waiting in the cart.</p>
                   <p className="font-bold">Complete your purchase now!</p>
@@ -185,6 +228,76 @@ const BusinessSolutions = () => {
         </div>
       </div>
     </section>
+<div
+  class="mx-auto my-16 max-w-5xl rounded-xl border-2 border-dashed border-purple-400
+         bg-gradient-to-br from-white via-[#fffdf7] to-[#fff8e9] p-10 md:p-16"
+>
+  <div class="grid items-center gap-12 md:grid-cols-2">
+    <div>
+      <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+        WhatsApp Payments
+      </h2>
+
+      <p class="mt-4 text-lg leading-relaxed text-gray-700 sm:text-xl">
+        Let customers pay right inside WhatsApp.<br />
+        Send invoices, collect payments – no extra steps.
+      </p>
+
+      <div
+        class="mt-12 w-64 overflow-hidden rounded-lg bg-white shadow ring-1 ring-gray-100"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&q=80&w=600"
+          alt="Product"
+          class="h-32 w-full object-cover"
+        />
+        <div class="p-4 text-sm">
+          <h3 class="mb-1 font-medium text-gray-900">Hey (Sahil),</h3>
+          <p class="mb-4 leading-snug text-gray-700">
+            Your product is waiting in the cart. Complete your purchase now!
+          </p>
+          <span class="font-semibold text-emerald-600">Pay Now</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <button
+        class="w-56 rounded-full border border-emerald-300 py-3 font-semibold text-gray-900
+               shadow-sm transition hover:bg-emerald-50"
+      >
+        Generate Invoice
+      </button>
+      <span class="my-1 text-lg text-emerald-400">+</span>
+
+      <button
+        class="w-56 rounded-full border border-emerald-300 py-3 font-semibold text-gray-900
+               shadow-sm transition hover:bg-emerald-50"
+      >
+        Notify Payee
+      </button>
+      <span class="my-1 text-lg text-emerald-400">+</span>
+
+      <button
+        class="w-56 rounded-full border border-emerald-300 py-3 font-semibold text-gray-900
+               shadow-sm transition hover:bg-emerald-50"
+      >
+        Get Paid
+      </button>
+      <span class="my-1 text-lg text-emerald-400">↓</span>
+
+      <button
+        class="mt-2 w-56 rounded-full bg-amber-500 py-3 font-semibold text-white
+               shadow-lg transition hover:bg-amber-600"
+      >
+        Track Payments
+      </button>
+    </div>
+  </div>
+</div>
+
+  </>
+
   );
 };
 

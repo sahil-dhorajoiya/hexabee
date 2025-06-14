@@ -88,13 +88,24 @@ const InsightsSection = () => {
             </SwiperSlide>
           ))}
 
-          {/* Navigation Buttons */}
-          <div className="swiper-button-prev !left-0 absolute top-1/2 -translate-y-1/2 z-10 bg-yellow-200 hover:bg-yellow-300 p-3 rounded-full shadow-md cursor-pointer">
-            <Image src="/images/img_frame_black_900.svg" alt="Prev" width={24} height={24} />
-          </div>
-          <div className="swiper-button-next !right-0 absolute top-1/2 -translate-y-1/2 z-10 bg-yellow-200 hover:bg-yellow-300 p-3 rounded-full shadow-md cursor-pointer">
-            <Image src="/images/img_frame_black_900.svg" alt="Next" width={24} height={24} />
-          </div>
+          <div className="swiper-button-prev !left-0 absolute top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow-sm cursor-pointer border" style={{
+  backgroundColor: '#ffffff',
+  borderWidth: '1px',
+  borderImage: 'linear-gradient(90deg, rgba(249, 175, 24, 0.3), rgba(255, 195, 0, 0.3)) 1',
+  borderImageSlice: 1
+}}>
+  <Image src="/icons/arrow-left.svg" alt="Prev" width={24} height={24} />
+</div>
+
+<div className="swiper-button-next !right-0 absolute top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow-sm cursor-pointer border" style={{
+  backgroundColor: '#ffffff',
+  borderWidth: '1px',
+  borderImage: 'linear-gradient(90deg, rgba(249, 175, 24, 0.3), rgba(255, 195, 0, 0.3)) 1',
+  borderImageSlice: 1
+}}>
+  <Image src="/icons/arrow-right.svg" alt="Next" width={24} height={24} />
+</div>
+
         </Swiper>
       </div>
     </section>

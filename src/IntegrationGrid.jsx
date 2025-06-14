@@ -65,7 +65,12 @@ export default function IntegrationGrid() {
           <button className="px-4 py-2 bg-[#fcd36d] text-sm font-bold rounded-md">See all integrations</button>
         </div>
       </div>
-
+{/* <div class="relative w-full h-64 bg-white">
+  <div class="absolute left-1/4 top-0 h-40 w-1 rounded-t-full bg-gradient-to-b from-yellow-300 to-orange-400"></div>
+  <div class="absolute left-1/4 top-40 h-1 w-24 bg-gradient-to-r from-yellow-300 to-orange-400 rounded-r-full"></div>
+  <div class="absolute left-[calc(25%+6rem)] top-40 w-4 h-4 bg-orange-400 border-2 border-yellow-300 rounded-full"></div>
+</div>
+ */}
       {/* Center Card for mobile */}
       <div className="block md:hidden mx-auto my-5 w-[280px] bg-[#fff8eb] border-2 border-dashed border-[#f6c768] rounded-xl p-6 text-center">
         <div className="text-2xl mb-2">🟢 + 🐝</div>
