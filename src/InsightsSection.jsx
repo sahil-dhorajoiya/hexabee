@@ -79,7 +79,7 @@ const InsightsSection = () => {
                   <p className="text-gray-600 mb-6">{card.description}</p>
                   <Button
                     variant="primary"
-                    className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 text-black"
+                    className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-[rgba(252,217,162,0.3)] text-black"
                   >
                     {card.buttonText}
                   </Button>

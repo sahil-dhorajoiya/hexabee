@@ -32,17 +32,17 @@ const FeaturesSection = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-yellow-400 rounded-full p-4">
+              <div className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-[rgba(252,217,162,0.3)] rounded-full p-4">
                 <Image className="rotate-[179deg]" src="/images/img_frame_black_900.svg" alt="Feature" width={32} height={32} />
               </div>
-              <div className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-yellow-400 rounded-full p-4">
+              <div className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-[rgba(252,217,162,0.3)] rounded-full p-4">
                 <Image src="/images/img_frame_black_900.svg" alt="Feature" width={32} height={32} />
               </div>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="space-y-6 relative">
+          <div className="space-y-6 relative card-effect-grid">
             {/* Stats Card */}
             <Card className="bg-gradient-to-b from-yellow-25 to-white p-6 shadow-lg w-full lg:w-auto lg:absolute lg:top-[-85px] lg:right-[10px]">
               <h3 className="text-lg font-bold text-black mb-4">Stats</h3>

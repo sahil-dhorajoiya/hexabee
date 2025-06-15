@@ -6,7 +6,7 @@ import Button from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="bg-white pt-32 md:pt-40 pb-10">
+    <section className="bg-white pt-32 md:pt-40 pb-10 main-hero-section">
       <div className="container mx-auto px-4">
         {/* API Badge & Meta Partner */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-6 mb-8">
@@ -68,7 +68,7 @@ const HeroSection = () => {
           ].map((feature, i) => (
             <div
               key={i}
-              className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-yellow-400 rounded-full px-5 py-2 sm:px-6 sm:py-3 flex items-center"
+              className="bg-gradient-to-r from-[#fffdf9] to-[#fff7e6]  border border-[rgba(252,217,162,0.3)] rounded-full px-5 py-2 sm:px-6 sm:py-3 flex items-center"
             >
               <Image
                 src={`/images/${feature.icon}`}

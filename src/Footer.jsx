@@ -26,8 +26,8 @@ const Footer = () => {
               className="flex-1 px-5 py-4 rounded-full border border-black w-full sm:w-[300px]"
             />
             <Button
-              variant="primary"
-              className="bg-yellow-400 text-black font-semibold px-6 py-4 rounded-full border border-yellow-400"
+              // variant="primary"
+              className=""
             >
               Subscribe
             </Button>

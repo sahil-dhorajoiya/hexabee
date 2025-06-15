@@ -20,7 +20,7 @@ const Header = () => {
             alt="Hexibee Logo" 
             width={292} 
             height={80} 
-            className="h-12 w-auto"
+            className="h-12 w-auto header-logo"
           />
         </div>
         
@@ -81,7 +81,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center">
           <Button 
             variant="primary" 
-            className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold px-6 py-3 rounded-full border border-yellow-400"
+            className="bg-yellow-400  border border-[rgba(219, 193, 151, 0.3)] text-black font-semibold px-6 py-3 rounded-full "
           >
             Book A Demo
           </Button>
@@ -98,13 +98,13 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="lg:hidden bg-white border-t">
+        <div className="lg:hidden      " style={{ background: ' linear-gradient(90deg, #fffdf9 0%, #fff7e6 100%)'}}>
           <nav className="px-4 py-4 space-y-4">
             <Link href="#" className="block text-[#000000] hover:text-blue-600">Solution</Link>
             <Link href="#" className="block text-[#000000] hover:text-blue-600">Features</Link>
             <Link href="#" className="block text-[#000000] hover:text-blue-600">Integration</Link>
             <Link href="#" className="block text-[#000000] hover:text-blue-600">Resources</Link>
-            <Button variant="primary" className="w-full mt-4">Book A Demo</Button>
+            <Button variant="primary" className="w-full mt-4 bg-yellow-400 text-black font-semibold  border border-[rgba(219, 193, 151, 0.3)] ">Book A Demo</Button>
           </nav>
         </div>
       )}
